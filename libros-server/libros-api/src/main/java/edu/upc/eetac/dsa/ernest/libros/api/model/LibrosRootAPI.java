@@ -1,0 +1,29 @@
+package edu.upc.eetac.dsa.ernest.libros.api.model;
+
+import java.util.ArrayList;
+
+import edu.upc.eetac.dsa.ernest.libros.api.links.Link;
+
+public class LibrosRootAPI {
+
+	private ArrayList<Link> links;
+
+	public LibrosRootAPI() {
+		super();
+		links = new ArrayList<Link>();
+	}
+
+	public void addLink(Link link) {
+		links.add(link);
+		return;
+	}
+
+	public ArrayList<Link> getLinks() {
+		return links;
+	}
+
+	public void setLinks(ArrayList<Link> links) {
+		this.links = links;
+	}
+
+}
